@@ -26,6 +26,7 @@
       margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
+      cursor: pointer;
     }
 
     section {
@@ -100,10 +101,12 @@
 </head>
 <body>
   <header>
-    <h1>Eliott</h1>
+    <h1>Portfolio</h1>
     <nav>
       <a onclick="showSection('about')">À propos</a>
-      <a onclick="showSection('projects')">Projets</a>
+      <a onclick="showSection('annee1')">1re année</a>
+      <a onclick="showSection('annee2')">2e année</a>
+      <a onclick="showSection('annee3')">3e année</a>
       <a onclick="showSection('skills')">Compétences</a>
       <a onclick="showSection('contact')">Contact</a>
     </nav>
@@ -115,15 +118,15 @@
     <p>Je m'appelle Eliott. Étudiant en gestion des entreprises et des administrations, j'ai suivi un parcours en BUT GEA, avec une spécialisation en contrôle de gestion et pilotage de la performance dès la 2e année. Mon parcours a été enrichi par une mobilité universitaire au Japon, où j'ai pu développer mon adaptabilité, ma curiosité et ma rigueur. Aujourd'hui, je présente ici mes travaux, mes projets académiques et mes expériences qui m'ont permis de développer les compétences clés de mon BUT.</p>
 
     <div class="icon-links">
-      <a onclick="showSection('projects')">
+      <a onclick="showSection('annee1')">
         <img src="images/annee1.png" alt="Année 1">
         <div>1re année</div>
       </a>
-      <a onclick="showSection('projects')">
+      <a onclick="showSection('annee2')">
         <img src="images/annee2.png" alt="Année 2">
         <div>2e année</div>
       </a>
-      <a onclick="showSection('projects')">
+      <a onclick="showSection('annee3')">
         <img src="images/annee3.png" alt="Année 3">
         <div>3e année</div>
       </a>
@@ -131,20 +134,23 @@
         <img src="images/contact.png" alt="Contact">
         <div>Contact</div>
       </a>
-      <a href="docs/CV_Deubelbeiss_Eliott_" target="_blank">
-        <img src="images/cv.png" alt="CV">
-        <div>Télécharger le CV</div>
-      </a>
+      <a href="CV_Deubelbeiss_Eliott_.pdf" target="_blank">Télécharger mon CV (PDF)</a>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Projets</h2>
-    <div class="project">
-      <h3>Titre du projet</h3>
-      <p>Description brève du projet. Explication de l'objectif, du contexte et des outils utilisés.</p>
-      <a href="#">Voir le document</a>
-    </div>
+  <section id="annee1">
+    <h2>1re année</h2>
+    <p>Contenu à venir pour la première année du BUT GEA : projets, matières, compétences développées.</p>
+  </section>
+
+  <section id="annee2">
+    <h2>2e année</h2>
+    <p>Contenu à venir pour la deuxième année : spécialisation CGPP, missions, stages éventuels.</p>
+  </section>
+
+  <section id="annee3">
+    <h2>3e année</h2>
+    <p>Contenu à venir pour la troisième année : SAE, projets professionnels, stage long, portfolio.</p>
   </section>
 
   <section id="skills">
@@ -168,3 +174,4 @@
   </footer>
 </body>
 </html>
+
