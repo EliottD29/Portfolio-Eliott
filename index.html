@@ -5,6 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio d'Eliott</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .project {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    .icon-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .icon-links a {
+      text-align: center;
+      text-decoration: none;
+      color: #222;
+    }
+
+    .icon-links img {
+      width: 64px;
+      height: 64px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      color: #555;
+    }
+
+    a {
+      color: #0077cc;
+    }
+
+    .profile-img {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 200px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,7 +98,31 @@
 
   <section id="about">
     <h2>À propos</h2>
-    <p>Ici figurera une présentation rapide du parcours d'Eliott (à compléter).</p>
+    <img src="images/japon.jpg" alt="Photo de voyage au Japon" class="profile-img">
+    <p>Je m'appelle Eliott. Étudiant en gestion des entreprises et des administrations, j'ai suivi un parcours en BUT GEA, avec une spécialisation en contrôle de gestion et pilotage de la performance dès la 2e année. Mon parcours a été enrichi par une mobilité universitaire au Japon avec Maxime, où j'ai pu développer mon adaptabilité, ma curiosité et ma rigueur. Aujourd'hui, je présente ici mes travaux, mes projets académiques et mes compétences clés développées tout au long de mes trois années d’études.</p>
+
+    <div class="icon-links">
+      <a href="#annee1">
+        <img src="images/annee1.png" alt="Année 1">
+        <div>1re année</div>
+      </a>
+      <a href="#annee2">
+        <img src="images/annee2.png" alt="Année 2">
+        <div>2e année</div>
+      </a>
+      <a href="#annee3">
+        <img src="images/annee3.png" alt="Année 3">
+        <div>3e année</div>
+      </a>
+      <a href="#contact">
+        <img src="images/contact.png" alt="Contact">
+        <div>Contact</div>
+      </a>
+      <a href="docs/CV_Eliott.pdf" target="_blank">
+        <img src="images/cv.png" alt="CV">
+        <div>Télécharger le CV</div>
+      </a>
+    </div>
   </section>
 
   <section id="projects">
@@ -34,16 +137,17 @@
   <section id="skills">
     <h2>Compétences</h2>
     <ul>
-      <li>Compétence 1</li>
-      <li>Compétence 2</li>
-      <li>Compétence 3</li>
-      <li>Compétence 4</li>
+      <li>Contrôle de gestion</li>
+      <li>Analyse financière</li>
+      <li>Excel / Power BI / Python</li>
+      <li>Adaptabilité interculturelle</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Tu peux me contacter par mail : <a href="mailto:eliott@mail.com">eliott@mail.com</a></p>
+    <p>Email : <a href="mailto:eliott@mail.com">eliott@mail.com</a></p>
+    <p>Téléphone : 06 12 34 56 78</p>
   </section>
 
   <footer>
