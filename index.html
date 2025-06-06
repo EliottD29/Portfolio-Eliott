@@ -32,6 +32,11 @@
       padding: 40px 20px;
       max-width: 800px;
       margin: auto;
+      display: none;
+    }
+
+    section#about {
+      display: block;
     }
 
     .project {
@@ -54,6 +59,7 @@
       text-align: center;
       text-decoration: none;
       color: #222;
+      cursor: pointer;
     }
 
     .icon-links img {
@@ -84,15 +90,22 @@
       border-radius: 10px;
     }
   </style>
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => section.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
 </head>
 <body>
   <header>
     <h1>Eliott</h1>
     <nav>
-      <a href="#about">À propos</a>
-      <a href="#projects">Projets</a>
-      <a href="#skills">Compétences</a>
-      <a href="#contact">Contact</a>
+      <a onclick="showSection('about')">À propos</a>
+      <a onclick="showSection('projects')">Projets</a>
+      <a onclick="showSection('skills')">Compétences</a>
+      <a onclick="showSection('contact')">Contact</a>
     </nav>
   </header>
 
@@ -102,23 +115,23 @@
     <p>Je m'appelle Eliott. Étudiant en gestion des entreprises et des administrations, j'ai suivi un parcours en BUT GEA, avec une spécialisation en contrôle de gestion et pilotage de la performance dès la 2e année. Mon parcours a été enrichi par une mobilité universitaire au Japon, où j'ai pu développer mon adaptabilité, ma curiosité et ma rigueur. Aujourd'hui, je présente ici mes travaux, mes projets académiques et mes expériences qui m'ont permis de développer les compétences clés de mon BUT.</p>
 
     <div class="icon-links">
-      <a href="#annee1">
+      <a onclick="showSection('projects')">
         <img src="images/annee1.png" alt="Année 1">
         <div>1re année</div>
       </a>
-      <a href="#annee2">
+      <a onclick="showSection('projects')">
         <img src="images/annee2.png" alt="Année 2">
         <div>2e année</div>
       </a>
-      <a href="#annee3">
+      <a onclick="showSection('projects')">
         <img src="images/annee3.png" alt="Année 3">
         <div>3e année</div>
       </a>
-      <a href="#contact">
+      <a onclick="showSection('contact')">
         <img src="images/contact.png" alt="Contact">
         <div>Contact</div>
       </a>
-      <a href="docs/CV_Eliott.pdf" target="_blank">
+      <a href="docs/CV_Deubelbeiss_Eliott_" target="_blank">
         <img src="images/cv.png" alt="CV">
         <div>Télécharger le CV</div>
       </a>
@@ -146,8 +159,8 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email : <a href="mailto:eliott@mail.com">eliott@mail.com</a></p>
-    <p>Téléphone : 06 12 34 56 78</p>
+    <p>Email : <a href="mailto:eliott.deubelbeiss@etu.u-paris.fr">eliott.deubelbeiss@etu.u-paris.fr</a></p>
+    <p>Téléphone : 06 89 24 95 21</p>
   </section>
 
   <footer>
