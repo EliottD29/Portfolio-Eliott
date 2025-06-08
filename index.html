@@ -7,42 +7,33 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #fefcfc;
-      color: #333;
+      background-color: #f9f9f9;
     }
 
     header {
-      background: #2c3e50;
-      color: #ecf0f1;
+      background: #222;
+      color: #fff;
       padding: 20px;
       text-align: center;
     }
 
     nav a {
-      color: #ecf0f1;
-      margin: 0 15px;
+      color: #fff;
+      margin: 0 10px;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     section {
-      padding: 50px 40px;
-      max-width: 1000px;
-      margin: 40px auto;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
       display: none;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: justify;
     }
 
     section#about {
@@ -50,11 +41,11 @@
     }
 
     .project {
-      border: 1px solid #ddd;
+      border: 1px solid #ccc;
       padding: 20px;
       margin-bottom: 30px;
-      border-radius: 8px;
-      background: #fdfdfd;
+      background-color: #fff;
+      border-radius: 5px;
     }
 
     .project h4 {
@@ -65,72 +56,50 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 30px;
-      margin-top: 40px;
+      gap: 20px;
+      margin-top: 30px;
     }
 
     .icon-links a {
       text-align: center;
       text-decoration: none;
-      color: #34495e;
-      transition: transform 0.2s ease;
-      background-color: #F3EBDE;
-      padding: 10px;
-      border-radius: 12px;
-      width: 180px;
-      display: block;
-    }
-
-    .icon-links a:hover {
-      transform: scale(1.05);
+      color: #222;
+      cursor: pointer;
     }
 
     .icon-links img {
-      width: 80px;
-      height: 80px;
-      border-radius: 10px;
-      object-fit: cover;
-    }
-
-    .icon-links div {
-      margin-top: 10px;
-      font-size: 15px;
-      font-weight: bold;
+      width: 64px;
+      height: 64px;
     }
 
     ul {
       list-style-type: disc;
       padding-left: 20px;
-      margin-top: 10px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: #ecf0f1;
+      background: #eee;
       color: #555;
     }
 
     a {
-      color: #2980b9;
+      color: #0077cc;
     }
 
     .profile-img {
       display: block;
       margin: 0 auto 20px;
       max-width: 200px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
     }
   </style>
   <script>
     function showSection(id) {
       const sections = document.querySelectorAll('section');
       sections.forEach(section => section.style.display = 'none');
-      const target = document.getElementById(id);
-      if (target) {
-        target.style.display = 'block';
-      }
+      document.getElementById(id).style.display = 'block';
     }
   </script>
 </head>
@@ -138,7 +107,7 @@
   <header>
     <h1>Portfolio</h1>
     <nav>
-      <a onclick="showSection('about')">À propos</a>
+   <a onclick="showSection('about')">À propos</a>
       <a onclick="showSection('Expériences professionnelles')">Expériences professionnelles</a>
       <a onclick="showSection('Projets académiques')">Projets académiques</a>
       <a onclick="showSection('contact')">Contact</a>
@@ -169,7 +138,8 @@
     </div>
   </section>
 
-  <section id="Stage 1ʳᵉ année – GXO Logistics">
+
+    <section id="Stage 1ʳᵉ année – GXO Logistics">
     <h3>Stage 1ʳᵉ année – GXO Logistics</h3>
     <p>Ce premier stage a marqué le début de mon immersion dans le monde professionnel, au sein du service de contrôle de gestion de GXO Logistics, acteur majeur de la logistique internationale. Mon objectif principal était de comprendre concrètement en quoi consistait ce métier que je ne connaissais alors que théoriquement. Durant ce stage, j’ai découvert les rouages du suivi budgétaire dans un environnement structuré, en observant le fonctionnement des écritures comptables et des écarts budgétaires. J’ai également pris l’initiative d’aller à la rencontre de plusieurs départements (RH, ESG, opérations), ce qui m’a permis d’élargir ma vision du pilotage de la performance. Cette expérience m’a conforté dans mon choix d’orientation vers le parcours Contrôle de gestion et pilotage de la performance.</p>
 
@@ -194,187 +164,146 @@
     </div>
   </section>
 
-  <section id="Stage 2ᵉ année – SCOR SE">
-      <h3>Stage 2ᵉ année – SCOR SE</h3>
-      <p>Pour mon deuxième stage, j’ai intégré le département IT de SCOR SE, un groupe international de réassurance, au sein de l’équipe IT française. Cette expérience m’a permis de monter en compétence sur des missions concrètes de suivi d’activité, de qualité des données et de reporting. J’ai pris en charge la relance des équipes internes et externes concernant la saisie de leur temps dans un outil dédié, en travaillant en anglais avec un collègue basé en Allemagne. J’ai aussi participé à plusieurs réunions budgétaires et pu comprendre le cycle de validation comptable, depuis la commande jusqu'à l'imputation finale. Enfin, j’ai contribué à une mission d’analyse critique des rapports générés par les outils internes, en structurant un livrable simple, efficace et valorisé en interne. Ce stage m’a permis de consolider mes bases techniques, d’utiliser Power BI et SQL, et de développer ma rigueur professionnelle.</p>
 
+<section id="Stage 2ᵉ année – SCOR SE">
+    <h3>Stage 2ᵉ année – SCOR SE</h3>
+    <p>Pour mon deuxième stage, j’ai intégré le département IT de SCOR SE, un groupe international de réassurance, au sein de l’équipe IT française. Cette expérience m’a permis de monter en compétence sur des missions concrètes de suivi d’activité, de qualité des données et de reporting. J’ai pris en charge la relance des équipes internes et externes concernant la saisie de leur temps dans un outil dédié, en travaillant en anglais avec un collègue basé en Allemagne. J’ai aussi participé à plusieurs réunions budgétaires et pu comprendre le cycle de validation comptable, depuis la commande jusqu'à l'imputation finale. Enfin, j’ai contribué à une mission d’analyse critique des rapports générés par les outils internes, en structurant un livrable simple, efficace et valorisé en interne. Ce stage m’a permis de consolider mes bases techniques, d’utiliser Power BI et SQL, et de développer ma rigueur professionnelle.</p>
+
+<div class="project">
       <h4>1. Suivi d’activité des équipes IT</h4>
-      <ul>
-        <p><strong>Situation : </strong>
-          <li>L’entreprise faisait face à un taux faible de complétion dans son outil de suivi du temps (4 % externes, 70 % internes).
-        <p><strong>Tâche :</strong> 
-        Identifier les utilisateurs non conformes et améliorer la fiabilité du reporting.<li>
-      <ul>
+        <p><strong>Situation : </strong> L’entreprise faisait face à un taux faible de complétion dans son outil de suivi du temps (4 % externes, 70 % internes).
+        <p><strong>Tâche :</strong> Identifier les utilisateurs non conformes et améliorer la fiabilité du reporting.
         <p><strong>Action :</strong> 
-          
+          <ul>
       <li>Actualisation quotidienne d’un fichier Power BI.
-
       <li>Nettoyage des doublons via croisement de fichiers Excel.
-
       <li>Pratique journalière de l'anglais en entreprise.
-      <ul>
-        <p><strong>Résultat :</strong> 
-        Hausse significative du taux de complétion (objectif atteint). L'outil est devenu un support fiable de gestion du temps.<li>
       </ul>
+        <p><strong>Résultat :</strong> Hausse significative du taux de complétion (objectif atteint). L'outil est devenu un support fiable de gestion du temps.<li>
          <p><strong>Compétences mobilisées :</strong> 
+<ul>
       <li>Traitement de données pertinentes pour alerter et corriger les pratiques.
-
       <li>Utilisation d’outils collaboratifs (Power BI, Excel).
-
       <li>Mise en œuvre d’un outil de suivi simple et exploitable.
-  
+  </ul>
+    </div>
         
+<div class="project">
       <h4>2. Participation aux réunions budgétaires</h4>
-      <ul>
-        <p><strong>Situation : </strong>
-          <li>L’équipe comptable avait besoin de renfort pour corriger des erreurs de ventilation budgétaire.
-        <p><strong>Tâche :</strong> 
-         Participer aux réunions budgétaires, analyser les écarts et corriger les imputations erronées.<li>
-      <ul>
+        <p><strong>Situation : </strong> L’équipe comptable avait besoin de renfort pour corriger des erreurs de ventilation budgétaire.
+        <p><strong>Tâche :</strong> Participer aux réunions budgétaires, analyser les écarts et corriger les imputations erronées.
         <p><strong>Action :</strong> 
-          
+        <ul>
       <li>Analyse d’anomalies entre factures et centres de coûts.
-
       <li>Proposition de corrections.
-
       <li>Observation du processus achat → comptabilisation.
-      <ul>
-        <p><strong>Résultat :</strong> 
-        Contribution active et progressive aux échanges ; gain de confiance de l’équipe.<li>
       </ul>
+        <p><strong>Résultat :</strong> Contribution active et progressive aux échanges ; gain de confiance de l’équipe.<li>
          <p><strong>Compétences mobilisées :</strong> 
+        <ul>
       <li>Analyse de la structure comptable et organisationnelle.
-
       <li>Identification de risques comptables (mauvaises imputations).
-
       <li>Compréhension des méthodes de coûts appliquées.
-
-        
-      <h4>3. Analyse des rapports internes de suivi d'activité</h4>
-      <ul>
-        <p><strong>Situation : </strong>
-          <li>L’outil de suivi d’activité générait de nombreux rapports, souvent peu exploités ou contenant des données incomplètes ou incohérentes. 
-        <p><strong>Tâche :</strong> 
-         Identifier les rapports les plus utiles, améliorer leur lisibilité et s'assurer de la qualité des informations extraites.<li>
-      <ul>
-        <p><strong>Action :</strong> 
-          
-      <li>Utilisation de SQL pour comprendre les structures.
-
-      <li>Élaboration d’un rapport synthétique clair.
-      <ul>
-        <p><strong>Résultat :</strong> 
-        L’équipe utlise maintenant les rapports les plus pertinents, disposant d’une meilleure qualité d'information, pour assurer des livrables justes.<li>
-      </ul>
-         <p><strong>Compétences mobilisées :</strong> 
-      <li>Capacité à évaluer de manière critique la production de reporting interne
-
-      <li>Aptitude à exploiter les structures techniques de données pour identifier les points de rupture ou de redondance
-
-      <li>Amélioration de la lisibilité et de la fiabilité des outils de restitution en réponse à des besoins réels du terrain
+</ul>
     </div>
 
+        <div class="project">
+      <h4>3. Analyse des rapports internes de suivi d'activité</h4>
+        <p><strong>Situation : </strong> L’outil de suivi d’activité générait de nombreux rapports, souvent peu exploités ou contenant des données incomplètes ou incohérentes. 
+        <p><strong>Tâche :</strong> Identifier les rapports les plus utiles, améliorer leur lisibilité et s'assurer de la qualité des informations extraites.<li>
+        <p><strong>Action :</strong> 
+      <ul>
+      <li>Utilisation de SQL pour comprendre les structures.
+      <li>Élaboration d’un rapport synthétique clair.
+      </ul>
+        <p><strong>Résultat :</strong> L’équipe utlise maintenant les rapports les plus pertinents, disposant d’une meilleure qualité d'information, pour assurer des livrables justes.<li>
+         <p><strong>Compétences mobilisées :</strong> 
+      <ul>
+      <li>Capacité à évaluer de manière critique la production de reporting interne
+      <li>Aptitude à exploiter les structures techniques de données pour identifier les points de rupture ou de redondance
+      <li>Amélioration de la lisibilité et de la fiabilité des outils de restitution en réponse à des besoins réels du terrain
+ </ul>
+    </div>
+</section>
 
-   <section id="Stage 3ᵉ année – SCOR SE">
-      <h3>Stage 3ᵉ année – SCOR SE</h3>
-      <p>Durant mon troisième stage, j’ai été réintégré au sein du service de contrôle de gestion IT, me permettant d’évoluer dans un contexte connu avec plus de responsabilités. J’ai en effet gagné plus de responsabilités, ayant déjà la confiance de mon équipe . Ayant accès au suivi budgétaire grâce au fichier de Cost Follow Up, j’ai pu concevoir plusieurs tableaux de bord sur Power BI, dont un dédié au pilotage des projets ESG. J’ai également continué ma mission de suivi des temps des équipes IT, perfectionnant ce que j'avais abandonné à mon départ en mars un an plus tôt. Enfin, j’ai mené des actions concrètes pour améliorer la qualité des données (daily rates, temps renseignés), garantissant la fiabilité des reportings financiers. Ce stage m’a permis de mettre en œuvre des compétences de niveau avancé en analyse, en conception d’outils de pilotage et en amélioration continue.</p>
 
+<section id="Stage 3ᵉ année – SCOR SE">
+    <h3>Stage 3ᵉ année – SCOR SE</h3>
+        <p>Durant mon troisième stage, j’ai été réintégré au sein du service de contrôle de gestion IT, me permettant d’évoluer dans un contexte connu avec plus de responsabilités. J’ai en effet gagné plus de responsabilités, ayant déjà la confiance de mon équipe . Ayant accès au suivi budgétaire grâce au fichier de Cost Follow Up, j’ai pu concevoir plusieurs tableaux de bord sur Power BI, dont un dédié au pilotage des projets ESG. J’ai également continué ma mission de suivi des temps des équipes IT, perfectionnant ce que j'avais abandonné à mon départ en mars un an plus tôt. Enfin, j’ai mené des actions concrètes pour améliorer la qualité des données (daily rates, temps renseignés), garantissant la fiabilité des reportings financiers. Ce stage m’a permis de mettre en œuvre des compétences de niveau avancé en analyse, en conception d’outils de pilotage et en amélioration continue.</p>
+
+
+<div class="project">
       <h4>1. Suivi budgétaire via Cost Follow Up</h4>
-      <ul>
-       <p><strong>Situation : </strong>
-          <li>L’entreprise avait besoin d’un suivi plus fin de ses coûts par projet.
-        <p><strong>Tâche :</strong> 
-        Création d'un tableau de bord pour un suivi plus efficace.<li>
-      <ul>
+       <p><strong>Situation : </strong> <li>L’entreprise avait besoin d’un suivi plus fin de ses coûts par projet.
+        <p><strong>Tâche :</strong> Création d'un tableau de bord pour un suivi plus efficace.<li>
         <p><strong>Action :</strong> 
-          
+      <ul>
       <li>Utilisation autonome du Cost Follow Up.
-
       <li>Correction des affectations erronées en lien avec les services concernés
-
       <li>Suivi régulier des lignes de coûts par projet
-      <ul>
-        <p><strong>Résultat :</strong> 
-        Les tableaux de répartition produits ont permis un suivi budgétaire plus précis et directement exploitable par la direction.<li>
       </ul>
+        <p><strong>Résultat :</strong> Les tableaux de répartition produits ont permis un suivi budgétaire plus précis et directement exploitable par la direction.<li>
          <p><strong>Compétences mobilisées :</strong> 
+      <ul>
       <li>Exploitation avancée du Cost Follow Up.
-
       <li>Intégration des impacts budgétaires sur les projets.
+</ul>
+    </div>
 
+<div class="project">
       <h4>2. Création d’un rapport ESG sous Power BI</h4>
-      <ul>
-       <p><strong>Situation : </strong>
-          <li>Demande de suivi du temps passé sur les projets ESG par un autre secteur. Aucun mode de suivi actuellement mis en place
-        <p><strong>Tâche :</strong> 
-        Créer un outil de reporting<li>
-      <ul>
+       <p><strong>Situation : </strong> <li>Demande de suivi du temps passé sur les projets ESG par un autre secteur. Aucun mode de suivi actuellement mis en place
+        <p><strong>Tâche :</strong> Créer un outil de reporting<li>
         <p><strong>Action :</strong> 
-          
+      <ul>
       <li>Construction d’un rapport Power BI complet.
-
       <li>Connexion avec l’outil de suivi d’activité.
-
       <li>Visualisation claire des indicateurs ESG.
-      <ul>
-        <p><strong>Résultat :</strong> 
-        Outil pertinent et exploité, qui permet la visualisation des temps alloués aux services ESG<li>
       </ul>
-         <p><strong>Compétences mobilisées :</strong> 
-      <li>Intégration des coûts environnementaux et sociaux.
-
+        <p><strong>Résultat :</strong> Outil pertinent et exploité, qui permet la visualisation des temps alloués aux services ESG<li>
+         <p><strong>Compétences mobilisées :</strong> <li>Intégration des coûts environnementaux et sociaux.
+      <ul>
       <li>Reporting ESG intégré à la performance globale.
-
       <li>Données utilisées pour prise de décision RSE.
+</ul>
+    </div>
 
+<div class="project">
       <h4>3. Suivi du temps et méthode ABC</h4>
-      <ul>
-        <p><strong>Situation : </strong>
-          <li>La répartition des coûts devait être améliorée.
-        <p><strong>Tâche :</strong> 
-        Analyse de la qualité des temps renseignés<li>
-      <ul>
+        <p><strong>Situation : </strong><li>La répartition des coûts devait être améliorée.
+        <p><strong>Tâche :</strong> Analyse de la qualité des temps renseignés<li>
         <p><strong>Action :</strong> 
-          
+      <ul>
       <li>Analyse de la répartition des temps par service et par projet.
-
       <li>Mise en évidence de la sur-utilisation de certaines activités trop vagues
-      <ul>
-        <p><strong>Résultat :</strong> 
-        Suppression de l'activité "Management", utilisée de manière inappropriée pour remplir plus vite les fiches de temps<li>
       </ul>
-         <p><strong>Compétences mobilisées :</strong> 
-      <li>Proposition d’amélioration d’un processus d’allocation.
-
+        <p><strong>Résultat :</strong> Suppression de l'activité "Management", utilisée de manière inappropriée pour remplir plus vite les fiches de temps<li>
+         <p><strong>Compétences mobilisées :</strong> <li>Proposition d’amélioration d’un processus d’allocation.
+      <ul>
       <li>Contribution à une logique d’amélioration continue du suivi de la performance.
+      <li>Diagnostic des écarts et analyse des causes.
+</ul>
+    </div>
 
-
+<div class="project">
       <h4>4. Contrôle qualité des données</h4>
-      <ul>
-        <p><strong>Situation : </strong>
-          <li>Manque de qualité dans les informations des utilisateurs.
-        <p><strong>Tâche :</strong> 
-        Corriger et fiabiliser les données utilisées pour travailler avec des données exploitables<li>
-      <ul>
+        <p><strong>Situation : </strong> <li>Manque de qualité dans les informations des utilisateurs.
+        <p><strong>Tâche :</strong> Corriger et fiabiliser les données utilisées pour travailler avec des données exploitables<li>
         <p><strong>Action :</strong> 
-          
-      <li>Comparaison de plusieurs base de données
-
-      <li>Création d'un tableau de bord avec les informations correctes
       <ul>
-        <p><strong>Résultat :</strong> 
-        Rapport Power BI présentant les informations des ressources (notamment le taux journalier moyen et la localisation), pour avoir un meilleur aperçu des coûts par région.<li>
+      <li>Comparaison de plusieurs base de données
+      <li>Création d'un tableau de bord avec les informations correctes
       </ul>
-         <p><strong>Compétences mobilisées :</strong> 
-      <li>Audit interne des données.
-
+        <p><strong>Résultat :</strong> Rapport Power BI présentant les informations des ressources (notamment le taux journalier moyen et la localisation), pour avoir un meilleur aperçu des coûts par région.<li>
+         <p><strong>Compétences mobilisées :</strong> <li>Audit interne des données.
+      <ul>
       <li>Participation à une démarche qualité intégrée dans le pilotage
-
       <li>Confronter différentes sources de données hétérogènes
+    </ul>
     </div>
   </section>
 
- <section id="Projets Académiques">
+  <section id="Projets Académiques">
     <h2>Projets Académiques</h2>
    <div class="card-grid">
       <div class="card" onclick="showSection('projet1')">
@@ -428,4 +357,5 @@
     <p>Téléphone : 06 89 24 95 21</p>
     <a href="CV_Deubelbeiss_Eliott_.pdf" target="_blank">Télécharger mon CV (PDF)</a>
   </section>
+</body>
 </body>
