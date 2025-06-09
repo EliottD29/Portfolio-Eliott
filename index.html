@@ -163,6 +163,13 @@
       sections.forEach(section => section.style.display = 'none');
       document.getElementById(id).style.display = 'block';
     }
+     const hero = document.querySelector('.hero-section');
+  if (id === 'about') {
+    hero.classList.add('active');
+  } else {
+    hero.classList.remove('active');
+  }
+
   </script>
 </head>
 <body>
