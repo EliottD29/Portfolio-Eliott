@@ -27,7 +27,7 @@
       top: 0;
       left: 0;
       z-index: 1;
-      transition: filter 0.5s ease;
+      transition: opacity 0,3 ease, filter 0.3s ease;
     }
 
     .hero-section::after {
@@ -160,10 +160,6 @@
   </script>
 </head>
 <body>
-  <div class="hero-section">
-    <img src="IUT.png" alt="Image d'accueil">
-    <div class="hero-text">Bienvenue sur mon portfolio</div>
-  </div>
   <header>
     <h1>Portfolio</h1>
     <nav>
@@ -173,6 +169,19 @@
       <a onclick="showSection('contact')">Contact</a>
     </nav>
   </header>
+  <div class="hero-section">
+    <img src="IUT.png" alt="Image d'accueil">
+    <div class="hero-text">Bienvenue sur mon portfolio</div>
+  </div>
+  
+<script>
+  window.addEventListener("scroll", function () {
+    const hero = document.querySelector(".hero-section img");
+    const scrollY = window.scrollY;
+    hero.style.opacity = 1 - scrollY / 400;
+    hero.style.filter = `blur(${Math.min(scrollY / 40, 8)}px)`;
+  });
+</script>
 
   <section id="about">
     <h2>À propos</h2>
