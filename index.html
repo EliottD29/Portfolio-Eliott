@@ -157,22 +157,26 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
   </style>
-  <script>
+ <script>
     function showSection(id) {
       const sections = document.querySelectorAll('section');
       sections.forEach(section => section.style.display = 'none');
-      document.getElementById(id).style.display = 'block';
-    }
-     const hero = document.querySelector('.hero-section');
-  if (id === 'about') {
-    hero.classList.add('active');
-  } else {
-    hero.classList.remove('active');
-  }
-    window.onload = function() {
-    showSection('about');
-  };
+      const target = document.getElementById(id);
+      if (target) {
+        target.style.display = 'block';
+      }
 
+      const hero = document.querySelector('.hero-section');
+      if (id === 'about') {
+        hero.classList.add('active');
+      } else {
+        hero.classList.remove('active');
+      }
+    }
+
+    window.onload = function() {
+      showSection('about');
+    };
   </script>
 </head>
 <body>
