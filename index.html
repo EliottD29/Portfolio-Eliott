@@ -71,7 +71,16 @@
       font-weight: bold;
       cursor: pointer;
     }
-
+    nav a {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+nav a:hover {
+  transform: scale(1.1);
+  color: #F3EBDE; /* couleur douce au survol */
+}
+nav a:active {
+  transform: scale(0.95);
+}
   section {
       padding: 50px 40px;
       max-width: 1000px;
